@@ -9,11 +9,6 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroesComponent implements OnInit {
 
-  // inline instantiation of a class
-  hero: Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
   // list of heroes that are displayed
   heroes = HEROES;
   // becomes editable upon selection
