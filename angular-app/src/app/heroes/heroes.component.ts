@@ -14,12 +14,18 @@ export class HeroesComponent implements OnInit {
     id: 1,
     name: 'Windstorm'
   };
-
+  // list of heroes that are displayed
   heroes = HEROES;
+  // becomes editable upon selection
+  selectedHero: Hero;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
   }
 
 }
